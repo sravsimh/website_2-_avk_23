@@ -1152,7 +1152,10 @@ section {
   list-style: none;
   text-align: center;
 }
-
+.portfolio-wrap a{
+  pointer-events: none;
+  cursor: default;
+}
 .portfolio .portfolio-flters li {
   cursor: pointer;
   display: inline-block;

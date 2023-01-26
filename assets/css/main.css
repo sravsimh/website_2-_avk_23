@@ -37,7 +37,7 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: #008374;
   text-decoration: none;
 }
 
@@ -314,7 +314,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  width: 30%;
   margin-right: 6px;
 }
 
@@ -612,7 +612,10 @@ section {
     z-index: 9996;
   }
 }
-
+.countdown-timer{
+  pointer-events: none;
+  cursor: default;
+}
 /*--------------------------------------------------------------
 # About Us Section
 --------------------------------------------------------------*/
@@ -1754,7 +1757,7 @@ section {
   background-color: var(--color-primary);
   height: 100%;
   padding: 20px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -2603,11 +2606,33 @@ section {
 .blog .comments .reply-form .btn-primary:hover {
   background-color: rgba(248, 90, 64, 0.8);
 }
-
+/*--------------------------------------------------------------
+# More
+--------------------------------------------------------------*/
+.more h2{
+  text-align: center;
+}
+.more h3{
+  margin-left: 3%;
+}
+.video{
+  text-align: center;
+}
+video{
+  width: 90%;
+  margin-top: 2%;
+}
+.samples,.ps{
+  margin-left: 5%;
+}
+.link{
+  text-align: center;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
+  text-align: center;
   font-size: 14px;
   background-color: var(--color-primary);
   padding: 50px 0;
@@ -2616,6 +2641,7 @@ section {
 
 .footer .footer-info .logo {
   line-height: 0;
+  text-align: center;
   margin-bottom: 25px;
 }
 
@@ -2682,7 +2708,6 @@ section {
 
 .footer .footer-links ul li {
   padding: 10px 0;
-  display: flex;
   align-items: center;
 }
 
@@ -2693,7 +2718,6 @@ section {
 .footer .footer-links ul a {
   color: rgba(255, 255, 255, 0.7);
   transition: 0.3s;
-  display: inline-block;
   line-height: 1;
 }
 

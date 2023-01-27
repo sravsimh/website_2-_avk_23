@@ -301,7 +301,7 @@ section {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  background-color: var(--color-primary);
+  background-color: #0076fc;
 }
 
 .header.sticked {
@@ -320,13 +320,12 @@ section {
 
 .header .logo h1 {
   font-size: 30px;
-  margin: 0;
+  margin-right: 0px;
   font-weight: 600;
   letter-spacing: 0.8px;
   color: #fff;
   font-family: var(--font-primary);
 }
-
 .header .logo h1 span {
   color: #f96f59;
 }
@@ -622,13 +621,28 @@ section {
 .timer{
   text-align: center;
 }
+.rabout{
+  height: 50%;
+}
+.avklogo{
+  width: 80%;
+}
+
+.mainpic{
+  text-align: center;
+  background-image: url(C:/Users/soundarya/website_2/assets/img/bg1.jpg)!important;
+  width: 100%;
+  position: relative;
+}
 .about h3 {
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 20px;
   font-family: var(--font-secondary);
 }
-
+.about p{
+  padding-left: 2%;
+}
 .about .call-us {
   left: 10%;
   right: 10%;
@@ -1047,17 +1061,21 @@ section {
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonial-wrap {
-  padding-left: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.testimonials .testimonial-wraps{
+  height: 600px;
+  text-align: center;
+}
+.testimonial .testimonial-items{
+  text-align: center;
 }
 
 .testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px;
-  margin: 30px 10px;
-  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
-  position: relative;
-  background: #fff;
-  border-radius: 10px;
+  width: 100%;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1627,6 +1645,7 @@ section {
   font-size: 34px;
 }
 
+
 .faq .content h4 {
   font-size: 20px;
   font-weight: 700;
@@ -1756,9 +1775,16 @@ section {
 .contact .info-container {
   background-color: var(--color-primary);
   height: 100%;
+  width: 50%;
+  margin: auto;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width:768px){
+  .contact .info-container{
+    width: 100%;
+  }
 }
 
 .contact .info-item {
@@ -1923,9 +1949,12 @@ section {
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  position: relative;
-  background: var(--color-primary);
-  padding: 60px 0 0 0;
+  /* position: relative; */
+  height: 100vh;
+  background-image:url(C:/Users/soundarya/website_2/assets/img/bg1.jpg) ;
+
+  background-size: cover;
+  padding: 160px 0 0 0;
 }
 
 @media (min-width: 1365px) {
@@ -2036,6 +2065,14 @@ section {
 .hero .icon-box .title a {
   color: #fff;
   transition: 0.3s;
+}
+
+.but{
+  background-color: #b098b9;
+}
+
+.but:hover{
+  background-color: #0076fc;
 }
 
 .hero .icon-box .icon {
@@ -2635,7 +2672,7 @@ video{
   text-align: center;
   font-size: 14px;
   background-color: var(--color-primary);
-  padding: 50px 0;
+  padding-top: 1px!important;
   color: white;
 }
 
